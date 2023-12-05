@@ -32,7 +32,7 @@ const Hero = () => {
                 </h1>
                 
                 <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">An aspiring Full-Stack Developer with a strong passion for technology and innovation. 
-                    As a recent graduate from Southern Alberta Institute of Technology[SAIT], I've immersed myself in learning 
+                    As a recent graduate from Southern Alberta Institute of Technology[SAIT], Ive immersed myself in learning 
                     cutting-edge web technologies, 
                     focusing on React, JavaScript, and responsive design.</p>
                 <motion.div  initial={{opacity:0,scale:0.5}} animate={{opacity:1,scale:1}} transition={{duration:0.2}}>
