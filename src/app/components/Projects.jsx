@@ -3,61 +3,60 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Gujju House",
     description: "Project 1 description",
-    image: "/images/G.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    image: "/images/Gujju.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/karmdesai13/GujjuHouse.git",
+    previewUrl: "/gujugang",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
+    title: "Gamers Hut",
     description: "Project 2 description",
     image: "/images/G.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/gamershut",
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Learn O City",
     description: "Project 3 description",
-    image: "/images/G.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    image: "/images/S.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/karmdesai13/LearnOCity.git",
+    previewUrl: "/learnocity",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
+    title: "Book Yatra",
     description: "Project 4 description",
-    image: "/images/G.png",
+    image: "/images/Flight.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/karmdesai13/bookyatra.git",
+    previewUrl: "https://bookyatra.vercel.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/G.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Health System",
+    description: "Python",
+    image: "/images/Health.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/HealthSystem.git",
+    previewUrl: "/HealthSystem",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Flight Booking System",
+    description: "C#",
     image: "/images/G.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/FlightBooking.git",
+    previewUrl: "/flightbooking",
   },
 ];
 
@@ -92,17 +91,19 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Frontend"
+          isSelected={tag === "Frontend"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Backend"
+          isSelected={tag === "Backend"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
+      
+      
+         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
@@ -119,7 +120,7 @@ const ProjectsSection = () => {
               previewUrl={project.previewUrl}
             />
           </motion.li>
-        ))}
+        ))} 
       </ul>
     </section>
   );
