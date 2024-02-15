@@ -44,7 +44,7 @@ export default function GamersHut() {
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                                 Our chat feature was visualized and refined through Figmas prototyping tools, focusing on 
-                                conversational design with instant previews to evaluate the chat's look and feel in real-time, 
+                                conversational design with instant previews to evaluate the chats look and feel in real-time, 
                                 mirroring a natural and intuitive conversational flow for gamers worldwide.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
