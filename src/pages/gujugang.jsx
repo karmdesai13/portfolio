@@ -24,7 +24,7 @@ export default function GujjuHouse() {
                                 Gujju House is engineered to provide an immersive and intuitive user experience, reflecting the rich tapestry of Indian culture through its vibrant UI design. Our app boasts a responsive layout that adapts fluidly across devices, ensuring that the journey from menu browsing to order placement is seamless on any screen size.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                                The app's architecture leverages modern front-end frameworks to deliver dynamic content with swift, smooth transitions. Our Menu Page exemplifies this, with high-definition images and real-time price updates that showcase our dishes in vivid detail.
+                                The apps architecture leverages modern front-end frameworks to deliver dynamic content with swift, smooth transitions. Our Menu Page exemplifies this, with high-definition images and real-time price updates that showcase our dishes in vivid detail.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                                 Each page of the app, from locating franchises to checking out, is optimized for performance and speed. Our backend systems ensure secure and efficient data handling, allowing for a robust and reliable ordering process with multiple payment integration options.
@@ -33,7 +33,7 @@ export default function GujjuHouse() {
                                 Innovative features such as real-time order tracking and custom user preferences set the Gujju House app apart. The Settings and Login pages are designed with user-centric principles, prioritizing accessibility and ease of use while maintaining high-security standards.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                                Gujju House's app is not just about functionality but also about creating an aesthetic that resonates with our brand's ethos. The use of traditional Indian motifs and a color palette inspired by spices and flavors enhances the overall gastronomic experience.
+                                Gujju House app is not just about functionality but also about creating an aesthetic that resonates with our brands ethos. The use of traditional Indian motifs and a color palette inspired by spices and flavors enhances the overall gastronomic experience.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                                 Join us on this tech-savvy journey of culinary discovery where every click is a step towards a feast for your senses.

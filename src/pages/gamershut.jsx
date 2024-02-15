@@ -22,34 +22,34 @@ export default function GamersHut() {
                             <p className="text-white font-serif text-xl">
                                 Gamers Hut represents the zenith of UI/UX design, meticulously crafted using Figma, the industry-leading 
                                 interface design tool. From conceptual wireframes to high-fidelity prototypes, each element of the app 
-                                was iterated to perfection. The Home Page design echoes Instagram's intuitive storytelling, achieved 
-                                by employing Figma's vector-based tools for responsive and fluid layouts that adapt to various devices.
+                                was iterated to perfection. The Home Page design echoes Instagrams intuitive storytelling, achieved 
+                                by employing Figmas vector-based tools for responsive and fluid layouts that adapt to various devices.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                                 The Server Page is the fruit of collaborative real-time design sessions within Figma, allowing us to 
                                 experiment with numerous user flow scenarios to optimize the communication experience. This space 
-                                leverages Figma’s interactive components and smart animate features to simulate the engagement and 
+                                leverages Figmas interactive components and smart animate features to simulate the engagement and 
                                 connectivity of real-time gaming environments.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                                The Opinion Page is a result of extensive user testing facilitated by Figma’s prototyping capabilities, 
+                                The Opinion Page is a result of extensive user testing facilitated by Figmas prototyping capabilities, 
                                 ensuring a user-centric platform for discussions, similar to Reddit but fine-tuned for the gaming 
                                 community. The design process involved constant feedback loops and iterative testing to achieve a 
                                 seamless and engaging user interface.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                                For live content streaming, Figma’s collaborative environment enabled designers and developers to 
+                                For live content streaming, Figmas collaborative environment enabled designers and developers to 
                                 synchronize perfectly, ensuring the streamed content is displayed with minimal latency and optimal 
-                                interactivity, providing a window to the gaming world’s luminaries.
+                                interactivity, providing a window to the gaming worlds luminaries.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                                Our chat feature was visualized and refined through Figma’s prototyping tools, focusing on 
+                                Our chat feature was visualized and refined through Figmas prototyping tools, focusing on 
                                 conversational design with instant previews to evaluate the chat's look and feel in real-time, 
                                 mirroring a natural and intuitive conversational flow for gamers worldwide.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                                 Embrace Gamers Hut, a fusion of technological prowess and design excellence, all rooted in the powerful 
-                                capabilities of Figma. It’s more than just an app; it&apos;s a platform where gaming culture is woven into 
+                                capabilities of Figma. Its more than just an app; it&apos;s a platform where gaming culture is woven into 
                                 the fabric of community and connection.
                             </p>
                         </div>
