@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import "tailwindcss/tailwind.css";
 export default function GamersHut() {
     return(
@@ -62,8 +63,10 @@ export default function GamersHut() {
                     <span className="bg-gray-700 px-4 py-2 rounded transition-transform hover:scale-110 hover:underline duration-300 ">
                         <a href="https://www.figma.com/file/2mbRF3ZKdFAZSdCP7VBuPs/Gamers-Hut?type=design&node-id=0%3A1&mode=design&t=BAnNvTUfKe15t8tS-1"> Figma</a>
                     </span>
+                    <Link href="/#projects" className='bg-blue-900 text-white rounded-lg  px-4 py-2'>Back </Link>
                 </div>
             </section>
+           
             <footer className="text-center py-4">
                 <p>© 2023 Gamers Hut. All rights reserved.</p>
             </footer>

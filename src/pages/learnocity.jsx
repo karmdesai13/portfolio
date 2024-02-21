@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import "tailwindcss/tailwind.css";
 export default function LearnOCity() {
     return (
@@ -64,8 +65,10 @@ export default function LearnOCity() {
                     <span className="bg-gray-700 px-4 py-2 rounded transition-transform hover:scale-110 hover:underline duration-300">
                         <a href="https://github.com/karmdesai13/LearnOCity.git">GitHub</a>
                     </span>
+                    <Link href="/#projects" className='bg-blue-900 text-white rounded-lg  px-4 py-2'>Back</Link>
                 </div>
             </section>
+           
             <footer className="text-center py-4">
                 <p>© 2023 LearnOCity. All rights reserved.</p>
             </footer>

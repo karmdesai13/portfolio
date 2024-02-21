@@ -36,12 +36,15 @@ const Hero = () => {
                     cutting-edge web technologies, 
                     focusing on React, JavaScript, and responsive design.</p>
                 <motion.div  initial={{opacity:0,scale:0.5}} animate={{opacity:1,scale:1}} transition={{duration:0.2}}>
+                <a href="https://drive.google.com/file/d/1xKXtnEu2CC58kFWSWrl5mpHM9O5WQvQ3/view?usp=sharing" >
                     <button className="px-6 py-3 w-full  sm:w-fit rounded-full mr-4 mb-2 md:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  text-white hover:bg-slate-200 ck">
-                        Hire Me
+                        Download Resume
                     </button>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1s7y3EwzeX5RifepuHrANupxKTXMNw56s/view?usp=sharing">
                     <button className="px-1 py-1 w-full sm:w-fit rounded-full  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white  mt3 ">
                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span> 
-                    </button>
+                    </button></a>
                 </motion.div>
             </motion.div>
             <motion.div  initial={{opacity:0,scale:0.5}} animate={{opacity:1,scale:1}} transition={{duration:0.2}} className="col-span-5 place-self-center mt-4 lg:mt-0">
