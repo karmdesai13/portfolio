@@ -25,7 +25,7 @@ export default function Health() {
                             As visitors enter the virtual storefront, they are greeted by a visually striking display of the latest Nike sneakers, ensuring instant engagement. Users can smoothly navigate through the product selection, propelled by a clean and intuitive interface that highlights Nike cutting-edge designs with minimal effort.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                            The shopping experience is refined to be as swift as the athletes who don Nike gear. A seamless search function allows users to filter products by style, size, or sport, offering detailed information and personalized recommendations with just a few clicks. Adding new items to the cart reflects the sophistication of the site's responsive design, as well as the robust JavaScript logic that powers user interactions.
+                            The shopping experience is refined to be as swift as the athletes who don Nike gear. A seamless search function allows users to filter products by style, size, or sport, offering detailed information and personalized recommendations with just a few clicks. Adding new items to the cart reflects the sophistication of the sites responsive design, as well as the robust JavaScript logic that powers user interactions.
                             </p>
                             
                         </div>

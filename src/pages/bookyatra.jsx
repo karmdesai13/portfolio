@@ -4,8 +4,8 @@ export default function GujjuHouse() {
     return (
         <div className="bg-gray-900 text-white w-full h-full text-center">
             <section className="text-center py-12">
-                <h1 className="text-4xl font-bold mb-3">Gujju House</h1>
-                <p className="text-lg">A Restaurant App for Indian Street Food</p>
+                <h1 className="text-4xl font-bold mb-3">BookYatra-Capstone</h1>
+                <p className="text-lg">A App Design</p>
             </section>
             <section className="flex flex-wrap justify-center gap-4 p-4">
                 <img src="./Bookyatracap/Home.png" alt="Home Page" className="max-w-sm rounded-lg transition-transform hover:scale-110 duration-300" />
@@ -22,7 +22,7 @@ export default function GujjuHouse() {
                             Embark on a journey with BookYatra, an immersive travel booking platform meticulously crafted with Figma for my capstone project at SAIT. This comprehensive design encompasses a user-centric landing page, a resourceful home page, and detailed hotel and flight booking pages, each brimming with thoughtfully curated information.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                            The landing page serves as a portal to adventure, offering a tantalizing glimpse into the possibilities that await. It's designed to captivate and guide users smoothly into the booking experience, where the essence of travel is beautifully captured in every layout.
+                            The landing page serves as a portal to adventure, offering a tantalizing glimpse into the possibilities that await. Its designed to captivate and guide users smoothly into the booking experience, where the essence of travel is beautifully captured in every layout.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                             Venture further into the home page, which stands as a central hub for travelers to start crafting their journeys. It is here where convenience meets choice, with accessible search functions and dynamic filters that allow users to seamlessly tailor their travel plans to their desires.
@@ -32,7 +32,7 @@ export default function GujjuHouse() {
                             </p>
                            
                             <p className="text-white font-serif text-xl mt-4">
-                            Dive into BookYatra, where Figma's design prowess meets the expansive world of travel. This project is not merely a tool but a gateway to discovery, embodying our commitment to delivering a seamless, inspiring, and reliable booking experience for globetrotters everywhere.
+                            Dive into BookYatra, where Figmas design prowess meets the expansive world of travel. This project is not merely a tool but a gateway to discovery, embodying our commitment to delivering a seamless, inspiring, and reliable booking experience for globetrotters everywhere.
                             </p>
                         </div>
                     </div>
