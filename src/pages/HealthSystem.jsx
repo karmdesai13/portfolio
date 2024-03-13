@@ -7,6 +7,7 @@ export default function Health() {
                 <h1 className="text-4xl font-bold mb-3">Health System</h1>
                 <p className="text-lg">A Health System Made With Python</p>
             </section>
+            
             <section className="py-12 px-6">
                 <h2 className="text-3xl font-semibold mb-6 text-center">Design and Development Insights</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

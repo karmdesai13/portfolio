@@ -6,8 +6,8 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "Gujju House",
-    description: "Project 1 description",
+    title: "Gujju House-Mobile App",
+    description: "A Figma Design",
     image: "/images/Gujju.png",
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/karmdesai13/GujjuHouse.git",
@@ -16,7 +16,7 @@ const projectsData = [
   {
     id: 2,
     title: "Gamers Hut",
-    description: "Project 2 description",
+    description: "A Figma Project",
     image: "/images/G.png",
     tag: ["All", "Frontend"],
     gitUrl: "/",
@@ -25,7 +25,7 @@ const projectsData = [
   {
     id: 3,
     title: "Learn O City",
-    description: "Project 3 description",
+    description: "A C# Project",
     image: "/images/S.png",
     tag: ["All", "Frontend"],
     gitUrl: "https://github.com/karmdesai13/LearnOCity.git",
@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 4,
     title: "Book Yatra",
-    description: "Project 4 description",
+    description: "A React Project",
     image: "/images/Flight.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/karmdesai13/bookyatra.git",
@@ -43,7 +43,7 @@ const projectsData = [
   {
     id: 5,
     title: "Health System",
-    description: "Python",
+    description: "A Python Project",
     image: "/images/Health.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/HealthSystem.git",
@@ -52,12 +52,31 @@ const projectsData = [
   {
     id: 6,
     title: "Flight Booking System",
-    description: "C#",
+    description: "A C# Project",
     image: "/images/G.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/FlightBooking.git",
     previewUrl: "/flightbooking",
   },
+  {
+    id: 7,
+    title: "Nike Landing Page",
+    description: "A Figma Design",
+    image: "/nike/nike1.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://www.figma.com/file/zq08XCjuho4GtGpn6VRct6/Untitled?type=design&node-id=13-10&mode=design&t=wPbXi3mvkbtC3Irx-0",
+    previewUrl: "/nikelanding",
+  },
+  {
+    id: 8,
+    title: "Book Yatra - Capstone Project",
+    description: "A Figma Design",
+    image: "/Bookyatracap/Landing.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://www.figma.com/file/DdGskCae0fonibEMw5GWrP/BookYatra?type=design&node-id=0-1&mode=design&t=sPoFqo5FJAKDbemp-0",
+    previewUrl: "/bookyatra",
+  },
+  
 ];
 
 const ProjectsSection = () => {
