@@ -5,6 +5,43 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
+    id: 1,
+    title: "Stock Assistant ChatBot",
+    description: "A program which helps with analyzing stocks.",
+    image: "/StockChatBot/StockAssist.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/Stock-Analysis-Chatbot.git",
+    previewUrl: "/bookyatra",
+  },
+  {
+    id: 2,
+    title: "AI Course Scheduler",
+    description: "A course scheduling program.",
+    image: "/CourseScheduler/CourseSche.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/AI-course-Scheduler.git",
+    previewUrl: "/bookyatra",
+  },
+  {
+    id: 3,
+    title: "AI Resume Critiquer",
+    description: "A program which helps with resume feedback.",
+    image: "/AIResume/AIResume.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/AI-Resume-Critique.git",
+    previewUrl: "/bookyatra",
+  },
+  {
+    id: 4,
+    title: "Book Yatra - Capstone Project",
+    description: "A Figma Design",
+    image: "/Bookyatracap/Landing.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://www.figma.com/file/DdGskCae0fonibEMw5GWrP/BookYatra?type=design&node-id=0-1&mode=design&t=sPoFqo5FJAKDbemp-0",
+    previewUrl: "/bookyatra",
+  },
+  
+  {
     id: 8,
     title: "Gujju House-Mobile App",
     description: "A Figma Design",
@@ -67,42 +104,7 @@ const projectsData = [
     gitUrl: "https://www.figma.com/file/zq08XCjuho4GtGpn6VRct6/Untitled?type=design&node-id=13-10&mode=design&t=wPbXi3mvkbtC3Irx-0",
     previewUrl: "/nikelanding",
   },
-  {
-    id: 4,
-    title: "Book Yatra - Capstone Project",
-    description: "A Figma Design",
-    image: "/Bookyatracap/Landing.png",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://www.figma.com/file/DdGskCae0fonibEMw5GWrP/BookYatra?type=design&node-id=0-1&mode=design&t=sPoFqo5FJAKDbemp-0",
-    previewUrl: "/bookyatra",
-  },
-  {
-    id: 2,
-    title: "AI Course Scheduler",
-    description: "A course scheduling program.",
-    image: "/CourseScheduler/CourseSche.png",
-    tag: ["All", "Backend"],
-    gitUrl: "https://github.com/karmdesai13/AI-course-Scheduler.git",
-    previewUrl: "/bookyatra",
-  },
-  {
-    id: 3,
-    title: "AI Resume Critiquer",
-    description: "A program which helps with resume feedback.",
-    image: "/AIResume/AIResume.png",
-    tag: ["All", "Backend"],
-    gitUrl: "https://github.com/karmdesai13/AI-Resume-Critique.git",
-    previewUrl: "/bookyatra",
-  },
-  {
-    id: 1,
-    title: "Stock Assistant ChatBot",
-    description: "A program which helps with analyzing stocks.",
-    image: "/StockChatBot/StockAssist.png",
-    tag: ["All", "Backend"],
-    gitUrl: "https://github.com/karmdesai13/Stock-Analysis-Chatbot.git",
-    previewUrl: "/bookyatra",
-  },
+  
 
   
 ];
