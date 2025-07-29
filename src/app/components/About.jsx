@@ -10,10 +10,14 @@ const TAB_DATA = [
       id: "skills",
       content: (
         <ul className="list-disc pl-2">
-          <li>Node.js</li>
-          <li>Html5</li>
-          <li>CSS</li>
+          <li>Machine Learning</li>
+          <li>Prompt Engineering</li>
+          <li>Natural Language Processing (NLP)</li>
+          <li>Graph Algorithms</li>
+          <li>Artificial Intelligence</li>
           <li>Python</li>
+          <li>C++</li>
+          <li>Node.js</li>
           <li>JavaScript</li>
           <li>React</li>
         </ul>
@@ -24,8 +28,10 @@ const TAB_DATA = [
       id: "education",
       content: (
         <ul className="list-disc pl-2">
-          <li>LDRP,Gandhanigar</li>
-          <li>Southern Alberta Institute of Technology,SAIT</li>
+          <li>Bachelor of Science in Computer Science, University of Lethbridge</li>
+          <ul>Diploma in Software Development,SAIT</ul>
+            <li>Grade:3.83</li>
+            <li>From September 2022 to April 2024</li>
         </ul>
       ),
     },
