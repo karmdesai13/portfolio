@@ -29,9 +29,8 @@ const TAB_DATA = [
       content: (
         <ul className="list-disc pl-2">
           <li>Bachelor of Science in Computer Science, University of Lethbridge</li>
-          <ul>Diploma in Software Development,SAIT</ul>
-            <li>Grade:3.83</li>
-            <li>From September 2022 to April 2024</li>
+          <li>Diploma in Software Development,SAIT</li>
+            
         </ul>
       ),
     },

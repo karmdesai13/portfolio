@@ -5,7 +5,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
-    id: 1,
+    id: 8,
     title: "Gujju House-Mobile App",
     description: "A Figma Design",
     image: "/images/Gujju.png",
@@ -14,7 +14,7 @@ const projectsData = [
     previewUrl: "/gujugang",
   },
   {
-    id: 2,
+    id: 9,
     title: "Gamers Hut",
     description: "A Figma Project",
     image: "/images/G.png",
@@ -23,7 +23,7 @@ const projectsData = [
     previewUrl: "/gamershut",
   },
   {
-    id: 3,
+    id: 10,
     title: "Learn O City",
     description: "A C# Project",
     image: "/images/S.png",
@@ -32,7 +32,7 @@ const projectsData = [
     previewUrl: "/learnocity",
   },
   {
-    id: 4,
+    id: 11,
     title: "Book Yatra",
     description: "A React Project",
     image: "/images/Flight.png",
@@ -68,7 +68,7 @@ const projectsData = [
     previewUrl: "/nikelanding",
   },
   {
-    id: 8,
+    id: 4,
     title: "Book Yatra - Capstone Project",
     description: "A Figma Design",
     image: "/Bookyatracap/Landing.png",
@@ -76,6 +76,34 @@ const projectsData = [
     gitUrl: "https://www.figma.com/file/DdGskCae0fonibEMw5GWrP/BookYatra?type=design&node-id=0-1&mode=design&t=sPoFqo5FJAKDbemp-0",
     previewUrl: "/bookyatra",
   },
+  {
+    id: 2,
+    title: "AI Course Scheduler",
+    description: "A course scheduling program.",
+    image: "/CourseScheduler/CourseSche.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/AI-course-Scheduler.git",
+    previewUrl: "/bookyatra",
+  },
+  {
+    id: 3,
+    title: "AI Resume Critiquer",
+    description: "A program which helps with resume feedback.",
+    image: "/AIResume/AIResume.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/AI-Resume-Critique.git",
+    previewUrl: "/bookyatra",
+  },
+  {
+    id: 1,
+    title: "Stock Assistant ChatBot",
+    description: "A program which helps with analyzing stocks.",
+    image: "/StockChatBot/StockAssist.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/Stock-Analysis-Chatbot.git",
+    previewUrl: "/bookyatra",
+  },
+
   
 ];
 
