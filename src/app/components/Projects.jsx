@@ -20,7 +20,7 @@ const projectsData = [
     image: "/CourseScheduler/CourseSche.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/AI-course-Scheduler.git",
-    previewUrl: "/bookyatra",
+    previewUrl: "/aicourse",
   },
   {
     id: 3,
