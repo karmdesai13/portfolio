@@ -40,6 +40,15 @@ const projectsData = [
     gitUrl: "https://www.figma.com/file/DdGskCae0fonibEMw5GWrP/BookYatra?type=design&node-id=0-1&mode=design&t=sPoFqo5FJAKDbemp-0",
     previewUrl: "/bookyatra",
   },
+  {
+    id: 12,
+    title: "C++-Text Based Game",
+    description: "A game build with the core concepts of C++",
+    image: "/C++Game/C++Game.png",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/karmdesai13/A-Text-Based-Adventure-Game.git",
+    previewUrl: "/bookyatra",
+  },
   
   {
     id: 8,

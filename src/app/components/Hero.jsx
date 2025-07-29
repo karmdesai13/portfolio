@@ -34,7 +34,7 @@ const Hero = () => {
                 <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">An aspiring Full-Stack Developer with a strong passion for technology and innovation. 
                     Currently pursuing my Bachelor of Science in Computer Science, Ive immersed myself in learning 
                     cutting-edge web technologies, 
-                    focusing on React, JavaScript, and responsive design.</p>
+                    focusing on Python,AI Intelligence, and building full stack apps.</p>
                 <motion.div  initial={{opacity:0,scale:0.5}} animate={{opacity:1,scale:1}} transition={{duration:0.2}}>
                 <a href="https://drive.google.com/file/d/1PyrREFyilvUViAiFWfaY3RlSr_MCukwx/view?usp=sharing" >
                     <button className="px-6 py-3 w-full  sm:w-fit rounded-full mr-4 mb-2 md:mb-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  text-white hover:bg-slate-200 ck">
