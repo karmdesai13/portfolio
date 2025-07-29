@@ -29,7 +29,7 @@ const projectsData = [
     image: "/AIResume/AIResume.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/AI-Resume-Critique.git",
-    previewUrl: "/bookyatra",
+    previewUrl: "/airesume"
   },
   {
     id: 4,
