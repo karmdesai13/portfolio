@@ -8,9 +8,9 @@ export default function GujjuHouse() {
                 
             </section>
             <section className="flex flex-wrap justify-center gap-4 p-4">
-                <img src="./AIResume/MainScreen.png" alt="Main Page" className="max-w-sm rounded-lg transition-transform hover:scale-110 duration-300" />
-                <img src="./AIResume/Upload.png" alt="Upload Page" className="max-w-sm rounded-lg transition-transform hover:scale-110 duration-300" />
-                <img src="./AIResume/Output.png" alt="Output Page" className="max-w-sm rounded-lg transition-transform hover:scale-110 duration-300" />
+                <video controls src="./CourseScheduler/AIProject.mp4" className="max-w-sm rounded-lg transition-transform hover:scale-110 duration-300">
+                        Your browser does not support the video tag.
+                </video>
               
 
                 
