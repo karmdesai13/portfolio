@@ -11,7 +11,7 @@ const projectsData = [
     image: "/StockChatBot/StockAssist.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/Stock-Analysis-Chatbot.git",
-    previewUrl: "/bookyatra",
+    previewUrl: "/stockchatbot",
   },
   {
     id: 2,
