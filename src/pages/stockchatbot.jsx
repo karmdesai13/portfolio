@@ -26,7 +26,7 @@ export default function GujjuHouse() {
                             Unlock the power of informed investment with our AI-powered Stock Analysis Assistant. This innovative chatbot provides instant access to crucial stock market data and technical indicators, designed to empower both novice and experienced investors.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                            Simply ask about any publicly traded company's stock price, or delve deeper into its performance with advanced financial metrics. Our assistant can fetch the latest closing prices, helping you stay updated on market movements with ease.
+                            Simply ask about any publicly traded companys stock price, or delve deeper into its performance with advanced financial metrics. Our assistant can fetch the latest closing prices, helping you stay updated on market movements with ease.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
                             Beyond basic prices, gain valuable insights by calculating key technical indicators. Explore the Simple Moving Average (SMA) and Exponential Moving Average (EMA) for various timeframes to identify trends and potential support/resistance levels.
@@ -35,7 +35,7 @@ export default function GujjuHouse() {
                             Understand market momentum with the Relative Strength Index (RSI), a powerful tool for identifying overbought or oversold conditions. Additionally, analyze the Moving Average Convergence Divergence (MACD) to spot trend changes and momentum shifts.
                             </p>
                             <p className="text-white font-serif text-xl mt-4">
-                            Visualize stock performance with dynamic charts. Request a plot of a company's stock price over the last year to quickly grasp its historical trajectory and identify patterns. Our assistant makes complex financial data accessible and actionable.
+                            Visualize stock performance with dynamic charts. Request a plot of a companys stock price over the last year to quickly grasp its historical trajectory and identify patterns. Our assistant makes complex financial data accessible and actionable.
                             </p>
                         </div>
                     </div>
