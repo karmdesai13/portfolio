@@ -53,7 +53,7 @@ export default function FlightBooking() {
             </section>
             
             <footer className="text-center py-4">
-                <p>© 2023 FlightBooking. All rights reserved.</p>
+                <p>© 2025 FlightBooking. All rights reserved.</p>
             </footer>
         </div>
     );

@@ -70,7 +70,7 @@ export default function LearnOCity() {
             </section>
            
             <footer className="text-center py-4">
-                <p>© 2023 LearnOCity. All rights reserved.</p>
+                <p>© 2025 LearnOCity. All rights reserved.</p>
             </footer>
         </div>
     );

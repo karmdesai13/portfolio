@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import "tailwindcss/tailwind.css";
-export default function Health() {
+export default function Nike() {
     return (
         <div className="bg-gray-900 text-white w-full h-full">
             <section className="text-center py-12">
@@ -43,7 +43,7 @@ export default function Health() {
             </section>
             
             <footer className="text-center py-4">
-                <p>© 2023 HealthSystem. All rights reserved.</p>
+                <p>© 2025 Nike Landing Page. All rights reserved.</p>
             </footer>
         </div>
     );

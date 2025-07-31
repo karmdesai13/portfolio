@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import "tailwindcss/tailwind.css";
-export default function GujjuHouse() {
+export default function Stock() {
     return (
         <div className="bg-gray-900 text-white w-full h-full text-center">
             <section className="text-center py-12">

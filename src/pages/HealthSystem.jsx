@@ -46,7 +46,7 @@ export default function Health() {
             </section>
             
             <footer className="text-center py-4">
-                <p>© 2023 HealthSystem. All rights reserved.</p>
+                <p>© 2025 HealthSystem. All rights reserved.</p>
             </footer>
         </div>
     );

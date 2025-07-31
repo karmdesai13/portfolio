@@ -52,7 +52,7 @@ export default function GujjuHouse() {
             </section>
             <Link href="/#projects" className='bg-blue-900 text-white rounded-lg  px-4 py-2'>Back</Link>
             <footer className="text-center py-4">
-                <p>© 2023 GujjuHouse. All rights reserved.</p>
+                <p>© 2025 GujjuHouse. All rights reserved.</p>
             </footer>
         </div>
     );
