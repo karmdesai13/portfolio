@@ -43,7 +43,7 @@ export default function Game() {
                 <h2 className="text-3xl font-semibold text-center mb-6">Technical Stack And Visit the Project</h2>
                 <div className="flex justify-center gap-4">
                     <span className="bg-gray-700 px-4 py-2 rounded transition-transform hover:scale-110 hover:underline duration-300">
-                        <a href="https://github.com/karmdesai13/AI-Resume-Critique.git"> GitHub</a>
+                        <a href= "https://github.com/karmdesai13/A-Text-Based-Adventure-Game.git"> GitHub</a>
                     </span>
                 </div>
             </section>
