@@ -47,7 +47,7 @@ const projectsData = [
     image: "/C++Game/C++Game.png",
     tag: ["All", "Backend"],
     gitUrl: "https://github.com/karmdesai13/A-Text-Based-Adventure-Game.git",
-    previewUrl: "/bookyatra",
+    previewUrl: "/game",
   },
   
   {
