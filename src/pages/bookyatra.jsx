@@ -17,8 +17,7 @@ import {
 } from 'lucide-react'
 import 'tailwindcss/tailwind.css'
 
-// BOOKYATRA — Cinematic Showcase (JavaScript version)
-// Deps: npm i framer-motion lucide-react
+
 
 export default function BookYatra() {
   const shots = [
@@ -31,7 +30,7 @@ export default function BookYatra() {
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-white">
-      {/* Aurora gradient + grid */}
+     
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_20%_20%,rgba(59,130,246,0.20),transparent),radial-gradient(50%_45%_at_80%_30%,rgba(34,197,94,0.18),transparent),radial-gradient(40%_40%_at_50%_80%,rgba(236,72,153,0.16),transparent)]"
@@ -41,7 +40,7 @@ export default function BookYatra() {
         className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:36px_36px] [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_70%)]"
       />
 
-      {/* NAV */}
+      
       <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6">
         <div className="flex items-center gap-2">
           <motion.span initial={{ rotate: -20, scale: 0.6 }} animate={{ rotate: 0, scale: 1 }} transition={{ type: 'spring', stiffness: 220, damping: 16 }} className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/15">
@@ -69,7 +68,7 @@ export default function BookYatra() {
         </div>
       </header>
 
-      {/* HERO */}
+     
       <section className="relative mx-auto w-full max-w-7xl px-6 pt-6 pb-8 md:pt-10">
         <div className="mx-auto grid max-w-4xl place-items-center text-center">
           <motion.h1
@@ -89,7 +88,7 @@ export default function BookYatra() {
             A sleek, human‑centered booking experience—from discovery to hotel details—designed in Figma for a capstone project.
           </motion.p>
 
-          {/* Feature chips */}
+          
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {[{ Icon: Plane, label: 'Flights' }, { Icon: Hotel, label: 'Hotels' }, { Icon: Filter, label: 'Smart Filters' }, { Icon: Heart, label: 'Wishlist' }, { Icon: MapPin, label: 'Map‑first UI' }].map(({ Icon, label }) => (
               <motion.span
@@ -104,7 +103,7 @@ export default function BookYatra() {
             ))}
           </div>
 
-          {/* CTA */}
+         
           <motion.div
             initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -125,7 +124,7 @@ export default function BookYatra() {
         </div>
       </section>
 
-      {/* GALLERY */}
+      
       <section className="mx-auto w-full max-w-7xl px-6 py-8">
         <h2 className="mb-5 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Screenshots</h2>
         <p className="mx-auto mb-6 max-w-3xl text-center text-white/70">Click any screen to open a lightbox.</p>
@@ -157,7 +156,7 @@ export default function BookYatra() {
           ))}
         </div>
 
-        {/* Lightbox */}
+       
         <AnimatePresence>
           {lightboxIndex !== null && (
             <motion.div
@@ -201,7 +200,7 @@ export default function BookYatra() {
         </AnimatePresence>
       </section>
 
-      {/* OVERVIEW */}
+      
       <section className="mx-auto w-full max-w-7xl px-6 py-10">
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Design Overview</h2>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -218,7 +217,7 @@ export default function BookYatra() {
         </div>
       </section>
 
-      {/* STACK + LINKS */}
+     
       <section className="mx-auto w-full max-w-7xl px-6 pb-14">
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Stack & Prototype</h2>
 
@@ -244,7 +243,7 @@ export default function BookYatra() {
         </div>
       </section>
 
-      {/* FOOTER */}
+     
       <footer className="mx-auto w-full max-w-7xl px-6 pb-10 text-center text-sm text-white/60">
         © 2025 BookYatra. All rights reserved.
       </footer>

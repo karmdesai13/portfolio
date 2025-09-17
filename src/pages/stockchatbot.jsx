@@ -18,9 +18,7 @@ import {
 } from 'lucide-react'
 import 'tailwindcss/tailwind.css'
 
-// Out-of-this-world STOCK SHOWCASE (JavaScript version)
-// No TypeScript annotations; drop-in for .js/.jsx files.
-// Deps:  npm i framer-motion lucide-react
+
 
 export default function Stock() {
   const shots = [
@@ -36,7 +34,7 @@ export default function Stock() {
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-white">
-      {/* Cosmic gradient + subtle grid */}
+      
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.20),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(236,72,153,0.18),transparent_35%),radial-gradient(circle_at_50%_80%,rgba(34,197,94,0.16),transparent_35%)]"
@@ -46,7 +44,7 @@ export default function Stock() {
         className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:36px_36px] [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_70%)]"
       />
 
-      {/* NAV */}
+     
       <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6">
         <div className="flex items-center gap-2">
           <motion.span initial={{ rotate: -15, scale: 0.6 }} animate={{ rotate: 0, scale: 1 }} transition={{ type: 'spring', stiffness: 220, damping: 14 }} className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/15">
@@ -73,7 +71,7 @@ export default function Stock() {
         </div>
       </header>
 
-      {/* HERO */}
+      
       <section className="relative mx-auto w-full max-w-7xl px-6 pb-8 pt-6 md:pt-10">
         <div className="mx-auto grid max-w-4xl place-items-center text-center">
           <motion.h1
@@ -93,7 +91,7 @@ export default function Stock() {
             A cinematic, AI‑powered toolkit for price lookups, technical indicators, and beautiful charts — all in one intuitive chat interface.
           </motion.p>
 
-          {/* Feature chips */}
+         
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {[
               { Icon: TrendingUp, label: 'SMA / EMA' },
@@ -113,7 +111,7 @@ export default function Stock() {
             ))}
           </div>
 
-          {/* CTA */}
+          
           <motion.div
             initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -133,7 +131,7 @@ export default function Stock() {
         </div>
       </section>
 
-      {/* GALLERY */}
+      
       <section className="mx-auto w-full max-w-7xl px-6 py-8">
         <h2 className="mb-5 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">
           Screenshots
@@ -169,7 +167,7 @@ export default function Stock() {
           ))}
         </div>
 
-        {/* Lightbox */}
+        
         <AnimatePresence>
           {lightboxIndex !== null && (
             <motion.div
@@ -213,7 +211,7 @@ export default function Stock() {
         </AnimatePresence>
       </section>
 
-      {/* TECH OVERVIEW */}
+     
       <section className="mx-auto w-full max-w-7xl px-6 py-10">
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Technical Overview</h2>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -230,7 +228,7 @@ export default function Stock() {
         </div>
       </section>
 
-      {/* STACK + LINKS */}
+      
       <section className="mx-auto w-full max-w-7xl px-6 pb-14">
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Tech Stack & Project Link</h2>
 
@@ -255,12 +253,12 @@ export default function Stock() {
         </div>
       </section>
 
-      {/* FOOTER */}
+      
       <footer className="mx-auto w-full max-w-7xl px-6 pb-10 text-center text-sm text-white/60">
         © 2025 Stock Assistant ChatBot · Built with ❤️ & math.
       </footer>
 
-      {/* Local styles for glow text */}
+      
       <style jsx>{`
         .glow-text { text-shadow: 0 0 20px rgba(255,255,255,0.25); }
       `}</style>
