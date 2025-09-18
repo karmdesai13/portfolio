@@ -159,7 +159,7 @@ export default function GamersHut() {
             Our chat feature was visualized and refined through Figmas prototyping tools, focusing on conversational design with instant previews to evaluate the chats look and feel in real-time, mirroring a natural and intuitive conversational flow for gamers worldwide.
           </p>
           <p className="mt-4">
-            Embrace Gamers Hut, a fusion of technological prowess and design excellence, all rooted in the powerful capabilities of Figma. Its more than just an app; it's a platform where gaming culture is woven into the fabric of community and connection.
+            Embrace Gamers Hut, a fusion of technological prowess and design excellence, all rooted in the powerful capabilities of Figma. Its more than just an app; its a platform where gaming culture is woven into the fabric of community and connection.
           </p>
         </article>
       </section>

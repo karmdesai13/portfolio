@@ -129,7 +129,7 @@ export default function FlightBooking() {
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Design and Development Insights</h2>
         <article className="prose prose-invert mx-auto max-w-4xl text-white/90">
           <p>
-            Our FlightBooking System is a testament to sophisticated software architecture, designed meticulously with C# and XAML to ensure a seamless user experience. The application’s UI harnesses the flexibility and power of XAML, presenting an intuitive interface that brings flight browsing and booking into the modern era with style and efficiency.
+            Our FlightBooking System is a testament to sophisticated software architecture, designed meticulously with C# and XAML to ensure a seamless user experience. The applications UI harnesses the flexibility and power of XAML, presenting an intuitive interface that brings flight browsing and booking into the modern era with style and efficiency.
           </p>
           <p className="mt-4">
             Navigating to the Flights tab unfolds a world of possibilities, where selections not only showcase available flights but also populate the reservation form effortlessly, symbolizing the integration of form and function. On making a reservation, the system cleverly generates a unique code, encapsulating the complexity of backend C# logic in a simple, user-friendly output.
@@ -141,10 +141,10 @@ export default function FlightBooking() {
             In the Reservations tab, users are greeted with their booking details, reflecting the seamless synchronization between the Flights and Reservation tabs. This page is not just a static view but a dynamic interface allowing updates and modifications, showcasing the malleable nature of the underlying XAML interface elements, all underpinned by the robust C# backend.
           </p>
           <p className="mt-4">
-            The reservation lookup feature, empowered by a sophisticated C# search algorithm, accepts reservation codes and swiftly retrieves booking details, further exemplifying the system's commitment to user-centric design and technological excellence.
+            The reservation lookup feature, empowered by a sophisticated C# search algorithm, accepts reservation codes and swiftly retrieves booking details, further exemplifying the systems commitment to user-centric design and technological excellence.
           </p>
           <p className="mt-4">
-            Experience the FlightBooking System, where the amalgamation of C# precision and XAML design aesthetics transports you to your destination. It's more than just a booking platform; it's a journey in luxurious efficiency, crafted to make every traveler's experience memorable and hassle-free.
+            Experience the FlightBooking System, where the amalgamation of C# precision and XAML design aesthetics transports you to your destination. Its more than just a booking platform; its a journey in luxurious efficiency, crafted to make every travelers experience memorable and hassle-free.
           </p>
         </article>
       </section>
