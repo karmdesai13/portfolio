@@ -50,15 +50,7 @@ const projectsData = [
     previewUrl: "/game",
   },
   
-  {
-    id: 8,
-    title: "Gujju House-Mobile App",
-    description: "A Figma Design",
-    image: "/images/Gujju.png",
-    tag: ["All", "Frontend"],
-    gitUrl: "https://github.com/karmdesai13/GujjuHouse.git",
-    previewUrl: "/gujugang",
-  },
+  
   {
     id: 9,
     title: "Gamers Hut",
