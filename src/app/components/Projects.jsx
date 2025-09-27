@@ -129,55 +129,64 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
-      </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
+    <section id="projects" className="px-4 sm:px-6 lg:px-8">
+  <h2 className="text-center text-3xl sm:text-4xl font-bold text-white mt-4 mb-6 sm:mb-10">
+    My Projects
+  </h2>
+
+  
+  <div className="text-white relative">
+    <div
+      className={`flex items-center gap-2 overflow-x-auto md:overflow-visible -mx-4 px-4 py-4 sm:py-6 md:mx-0 md:px-0 snap-x snap-mandatory no-scrollbar`}
+    >
+      {["All", "Frontend", "Backend", "AI Projects"].map((name) => (
+        <div key={name} className="snap-start flex-shrink-0">
+          <ProjectTag
+            onClick={handleTagChange}
+            name={name}
+            isSelected={tag === name}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+
+  
+  <ul
+    ref={ref}
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 pb-8"
+  >
+    {filteredProjects.map((project, index) => (
+      <motion.li
+        key={project.id ?? index}
+        variants={cardVariants}
+        initial="initial"
+        animate={isInView ? "animate" : "initial"}
+        transition={{ duration: 0.3, delay: index * 0.15 }}
+        className="min-w-0"
+      >
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          imgUrl={project.image}
+          gitUrl={project.gitUrl}
+          previewUrl={project.previewUrl}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Frontend"
-          isSelected={tag === "Frontend"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Backend"
-          isSelected={tag === "Backend"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="AI Projects"
-          isSelected={tag === "AI Projects"}
-        />
-      </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-      
-      
-         {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))} 
-      </ul>
-    </section>
+      </motion.li>
+    ))}
+  </ul>
+
+  <style jsx>{`
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  `}</style>
+</section>
+
   );
 };
 
