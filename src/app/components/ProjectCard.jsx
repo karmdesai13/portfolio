@@ -1,29 +1,108 @@
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useCallback } from "react";
+
+const isExternal = (url = "") => /^https?:\/\//i.test(url);
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+  const router = useRouter();
+
+  const goToPreview = useCallback(() => {
+    if (!previewUrl) return;
+    router.push(previewUrl);
+  }, [router, previewUrl]);
+
+  const onKeyActivate = (e) => {
+    if (!previewUrl) return;
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      router.push(previewUrl);
+    }
+  };
+
+  const stop = (e) => e.stopPropagation();
+
   return (
-    <div>
+    <div
+      className="group relative rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-transparent p-[1px] transition-transform duration-300 hover:-translate-y-1 hover:[transform:perspective(900px)_rotateX(1deg)_rotateY(-1deg)] focus-within:-translate-y-1 focus-within:[transform:perspective(900px)_rotateX(1deg)_rotateY(-1deg)]"
+      onClick={goToPreview}
+      onKeyDown={onKeyActivate}
+      role={previewUrl ? "link" : undefined}
+      tabIndex={previewUrl ? 0 : undefined}
+      aria-label={previewUrl ? `Open preview: ${title}` : undefined}
+    >
+      
+      <div className="rounded-2xl bg-[#0f0f10]">
+      
         <div
-        className="h-52 md:h-72 rounded-t-xl relative group"
-        style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}>
-        <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 ">
-            <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-            </Link>
-            <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
-            </Link>
+          className="relative h-52 w-full overflow-hidden rounded-t-2xl md:h-72"
+          style={{ background: `url(${imgUrl}) center/cover no-repeat` }}
+        >
+          
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+
+         
+          <div className="absolute inset-0 hidden items-center justify-center gap-3 bg-black/0 transition-all duration-500 group-hover:flex group-hover:bg-black/60">
+            {gitUrl && (
+              <Link
+                href={gitUrl}
+                target={isExternal(gitUrl) ? "_blank" : undefined}
+                rel={isExternal(gitUrl) ? "noreferrer noopener" : undefined}
+                className="group/action relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-white/40 bg-white/10 backdrop-blur hover:border-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+                aria-label="Open Git repository"
+                onClick={stop}
+              >
+                <CodeBracketIcon className="h-7 w-7 text-white/80 group-hover/action:text-white" />
+              </Link>
+            )}
+            {previewUrl && (
+              <Link
+                href={previewUrl}
+                target={isExternal(previewUrl) ? "_blank" : undefined}
+                rel={isExternal(previewUrl) ? "noreferrer noopener" : undefined}
+                className="group/action relative inline-flex h-14 w-14 items-center justify-center rounded-full border border-white/40 bg-white/10 backdrop-blur hover:border-white hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+                aria-label="Open live preview"
+                onClick={stop}
+              >
+                <EyeIcon className="h-7 w-7 text-white/80 group-hover/action:text-white" />
+              </Link>
+            )}
+          </div>
         </div>
+
+        
+        <div className="rounded-b-2xl px-5 py-5">
+          <h5 className="mb-1 text-lg font-semibold text-white">{title}</h5>
+          <p className="text-sm leading-relaxed text-[#ADB7BE]">{description}</p>
+
+          
+          <div className="mt-4 flex gap-3 md:hidden" onClick={stop}>
+            {gitUrl && (
+              <Link
+                href={gitUrl}
+                target={isExternal(gitUrl) ? "_blank" : undefined}
+                rel={isExternal(gitUrl) ? "noreferrer noopener" : undefined}
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2 text-sm text-white/90 hover:border-white/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+              >
+                <CodeBracketIcon className="h-5 w-5" />
+                Code
+              </Link>
+            )}
+            {previewUrl && (
+              <Link
+                href={previewUrl}
+                target={isExternal(previewUrl) ? "_blank" : undefined}
+                rel={isExternal(previewUrl) ? "noreferrer noopener" : undefined}
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-2 text-sm text-white/90 hover:border-white/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+              >
+                <EyeIcon className="h-5 w-5" />
+                Preview
+              </Link>
+            )}
+          </div>
         </div>
-        <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
-        </div>
+      </div>
     </div>
   );
 };

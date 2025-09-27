@@ -9,7 +9,7 @@ const projectsData = [
     title: "Stock Assistant ChatBot",
     description: "A program which helps with analyzing stocks.",
     image: "/StockChatBot/StockAssist.png",
-    tag: ["All", "Backend"],
+    tag: ["All", "AI Projects"],
     gitUrl: "https://github.com/karmdesai13/Stock-Analysis-Chatbot.git",
     previewUrl: "/stockchatbot",
   },
@@ -18,7 +18,7 @@ const projectsData = [
     title: "AI Course Scheduler",
     description: "A course scheduling program.",
     image: "/CourseScheduler/CourseSche.png",
-    tag: ["All", "Backend"],
+    tag: ["All", "AI Projects"],
     gitUrl: "https://github.com/karmdesai13/AI-course-Scheduler.git",
     previewUrl: "/aicourse",
   },
@@ -27,7 +27,7 @@ const projectsData = [
     title: "AI Resume Critiquer",
     description: "A program which helps with resume feedback.",
     image: "/AIResume/AIResume.png",
-    tag: ["All", "Backend"],
+    tag: ["All", "AI Projects"],
     gitUrl: "https://github.com/karmdesai13/AI-Resume-Critique.git",
     previewUrl: "/airesume"
   },
@@ -148,6 +148,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Backend"
           isSelected={tag === "Backend"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="AI Projects"
+          isSelected={tag === "AI Projects"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
