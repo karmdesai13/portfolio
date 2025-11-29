@@ -1,20 +1,33 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { BarChart3, Map, Database, Filter, Github, ExternalLink, Rocket, ShieldAlert, Maximize2 } from 'lucide-react'
 
 export default function CrimeDashboard() {
   const [open, setOpen] = useState(false)
 
+  // Dynamically load Tailwind CSS to avoid build errors with next/script or synchronous tags
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = "https://cdn.tailwindcss.com"
+    script.async = true
+    document.head.appendChild(script)
+
+    return () => {
+      // Optional cleanup
+      // document.head.removeChild(script)
+    }
+  }, [])
+
   return (
-    <main className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-white">
-      <script src="https://cdn.tailwindcss.com"></script>
+    <main className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-white font-sans">
       
+      {/* Background Gradients */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_20%_20%,rgba(220,38,38,0.15),transparent),radial-gradient(50%_45%_at_80%_30%,rgba(59,130,246,0.15),transparent),radial-gradient(40%_40%_at_50%_80%,rgba(234,179,8,0.10),transparent)]" />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:36px_36px] [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_70%)]" />
 
-      
+      {/* Header */}
       <header className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6">
         <div className="flex items-center gap-2">
           <motion.span 
@@ -47,7 +60,7 @@ export default function CrimeDashboard() {
         </div>
       </header>
 
-     
+      {/* Hero Section */}
       <section className="relative mx-auto w-full max-w-7xl px-6 pt-6 pb-2 md:pt:10">
         <div className="mx-auto grid max-w-4xl place-items-center text-center">
           <motion.h1
@@ -59,7 +72,7 @@ export default function CrimeDashboard() {
             Toronto Crime Analytics
           </motion.h1>
 
-          
+          {/* Feature Pills */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
             {[
               { Icon: BarChart3, label: 'Power BI' }, 
@@ -79,7 +92,7 @@ export default function CrimeDashboard() {
             ))}
           </div>
 
-          
+          {/* Call to Action */}
           <motion.div
             initial={{ scale: 0.98, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -96,7 +109,7 @@ export default function CrimeDashboard() {
         </div>
       </section>
 
-      
+      {/* Dashboard Preview Section (Inline Embed) */}
       <section className="mx-auto w-full max-w-7xl px-6 py-8">
         <div className="mx-auto max-w-5xl">
           <div className="overflow-hidden rounded-2xl border border-white/15 bg-black/40 p-2 backdrop-blur hover:border-white/30 transition duration-500 shadow-2xl shadow-blue-900/10">
@@ -115,7 +128,7 @@ export default function CrimeDashboard() {
         </div>
       </section>
 
-      
+      {/* Fullscreen Modal */}
       <AnimatePresence>
         {open && (
           <motion.div className="fixed inset-0 z-50 grid place-items-center bg-black/90 p-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(false)}>
@@ -150,10 +163,10 @@ export default function CrimeDashboard() {
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Technical Overview</h2>
         <article className="prose prose-invert mx-auto max-w-4xl text-white/90">
           <p>
-            This project is a comprehensive <strong>Power BI Dashboard</strong> designed to analyze over 10 years of Toronto Major Crime Indicators  data. It transforms raw datasets into actionable insights, helping stakeholders visualize trends in public safety.
+            This project is a comprehensive <strong>Power BI Dashboard</strong> designed to analyze over 10 years of Toronto Major Crime Indicators (MCI) data. It transforms raw datasets into actionable insights, helping stakeholders visualize trends in public safety.
           </p>
           <p className="mt-4">
-            The core of the analysis relies on advanced <strong>DAX (Data Analysis Expressions)</strong> to calculate complex metrics, such as dynamic Year-over-Year  growth percentages and seasonal crime density.
+            The core of the analysis relies on advanced <strong>DAX (Data Analysis Expressions)</strong> to calculate complex metrics, such as dynamic Year-over-Year (YoY) growth percentages and seasonal crime density.
           </p>
           <p className="mt-4">
             <strong>Geospatial Analysis:</strong> By integrating Bing Maps with latitude and longitude data, the dashboard features interactive heatmaps. These allow users to identify specific high-risk neighborhoods and visualize how crime hotspots have shifted from 2014 to 2024.
@@ -177,7 +190,18 @@ export default function CrimeDashboard() {
             </span>
           ))}
         </div>
-       
+        <div className="flex justify-center">
+          <a
+            href="https://github.com/yourusername/crime-dashboard-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-gradient-to-br from-blue-600 to-red-600 px-5 py-3 font-semibold shadow-lg shadow-blue-600/20 transition hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60"
+          >
+            <Github className="h-5 w-5" />
+            Visit the Repository
+            <ExternalLink className="h-4 w-4 opacity-90 group-hover:translate-x-0.5 transition" />
+          </a>
+        </div>
       </section>
 
       {/* Footer */}
