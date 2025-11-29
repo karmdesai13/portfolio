@@ -105,6 +105,15 @@ const projectsData = [
     gitUrl: "https://www.figma.com/file/zq08XCjuho4GtGpn6VRct6/Untitled?type=design&node-id=13-10&mode=design&t=wPbXi3mvkbtC3Irx-0",
     previewUrl: "/nikelanding",
   },
+  {
+    id: 13,
+    title: "Toronto Crime Visualization Dashboard",
+    description: "A Data Analysis Project",
+    image: "/images/TorontoCrime.png",
+    tag: ["All", "Data Analysis"],
+    gitUrl: "https://app.powerbi.com/view?r=eyJrIjoiODI5YjgxZDgtMTg5NC00NjNhLWJiZDktMjdlNTA2NGZmMzhhIiwidCI6IjhjZDM2MGMyLTA2OGItNGUzNi04ZGI1LTI3YjM1NzkyZjUzZiIsImMiOjZ9",
+    previewUrl: "/torontoCrime",
+  },
   
 
   
@@ -139,7 +148,7 @@ const ProjectsSection = () => {
     <div
       className={`flex items-center gap-2 overflow-x-auto md:overflow-visible -mx-4 px-4 py-4 sm:py-6 md:mx-0 md:px-0 snap-x snap-mandatory no-scrollbar`}
     >
-      {["All", "Frontend", "Backend", "AI Projects"].map((name) => (
+      {["All", "Frontend", "Backend", "AI Projects","Data Analysis"].map((name) => (
         <div key={name} className="snap-start flex-shrink-0">
           <ProjectTag
             onClick={handleTagChange}
