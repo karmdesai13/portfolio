@@ -38,7 +38,7 @@ export default function CrimeDashboard() {
           >
             <ShieldAlert className="h-5 w-5 text-red-400" />
           </motion.span>
-          <span className="text-sm/6 tracking-wider text-white/70">DATA ANALYTICS PORTFOLIO</span>
+          <span className="text-sm/6 tracking-wider text-white/70">DATA ANALYTICS PROJECT</span>
         </div>
         <div className="flex items-center gap-3">
           <a
@@ -104,7 +104,7 @@ export default function CrimeDashboard() {
             <button onClick={() => setOpen(true)} className="rounded-xl bg-white/10 px-3 py-1 font-semibold hover:bg-white/20 transition flex items-center gap-2">
               <Maximize2 className="h-4 w-4" /> Open Fullscreen
             </button>
-            <a href="https://github.com/yourusername/crime-dashboard-repo" target="_blank" rel="noopener noreferrer" className="rounded-xl bg-white/10 px-3 py-1 font-semibold hover:bg-white/20 transition">Open Repo</a>
+            
           </motion.div>
         </div>
       </section>
@@ -190,18 +190,7 @@ export default function CrimeDashboard() {
             </span>
           ))}
         </div>
-        <div className="flex justify-center">
-          <a
-            href="https://github.com/yourusername/crime-dashboard-repo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-gradient-to-br from-blue-600 to-red-600 px-5 py-3 font-semibold shadow-lg shadow-blue-600/20 transition hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/60"
-          >
-            <Github className="h-5 w-5" />
-            Visit the Repository
-            <ExternalLink className="h-4 w-4 opacity-90 group-hover:translate-x-0.5 transition" />
-          </a>
-        </div>
+        
       </section>
 
       {/* Footer */}
