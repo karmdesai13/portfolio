@@ -9,7 +9,7 @@ export default function CrimeDashboard() {
 
   return (
     <main className="relative min-h-screen w-full overflow-hidden bg-gray-950 text-white">
-      
+      <script src="https://cdn.tailwindcss.com"></script>
       
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_20%_20%,rgba(220,38,38,0.15),transparent),radial-gradient(50%_45%_at_80%_30%,rgba(59,130,246,0.15),transparent),radial-gradient(40%_40%_at_50%_80%,rgba(234,179,8,0.10),transparent)]" />
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:36px_36px] [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_70%)]" />
