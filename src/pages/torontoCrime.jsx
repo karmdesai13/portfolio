@@ -150,16 +150,16 @@ export default function CrimeDashboard() {
         <h2 className="mb-6 text-center text-2xl font-semibold tracking-tight text-white/95 md:text-3xl">Technical Overview</h2>
         <article className="prose prose-invert mx-auto max-w-4xl text-white/90">
           <p>
-            This project is a comprehensive <strong>Power BI Dashboard</strong> designed to analyze over 10 years of Toronto Major Crime Indicators (MCI) data. It transforms raw datasets into actionable insights, helping stakeholders visualize trends in public safety.
+            This project is a comprehensive <strong>Power BI Dashboard</strong> designed to analyze over 10 years of Toronto Major Crime Indicators  data. It transforms raw datasets into actionable insights, helping stakeholders visualize trends in public safety.
           </p>
           <p className="mt-4">
-            The core of the analysis relies on advanced <strong>DAX (Data Analysis Expressions)</strong> to calculate complex metrics, such as dynamic Year-over-Year (YoY) growth percentages and seasonal crime density.
+            The core of the analysis relies on advanced <strong>DAX (Data Analysis Expressions)</strong> to calculate complex metrics, such as dynamic Year-over-Year  growth percentages and seasonal crime density.
           </p>
           <p className="mt-4">
             <strong>Geospatial Analysis:</strong> By integrating Bing Maps with latitude and longitude data, the dashboard features interactive heatmaps. These allow users to identify specific high-risk neighborhoods and visualize how crime hotspots have shifted from 2014 to 2024.
           </p>
           <p className="mt-4">
-            <strong>Data Engineering:</strong> The project involved extensive data cleaning using Power Query. This included handling null values, standardizing "Premise Types" (e.g., grouping various residential types), and creating a robust data model with a dedicated Date Table for accurate time-intelligence calculations.
+            <strong>Data Engineering:</strong> The project involved extensive data cleaning using Power Query. This included handling null values, standardizing Premise Types (e.g., grouping various residential types), and creating a robust data model with a dedicated Date Table for accurate time-intelligence calculations.
           </p>
           <p className="mt-4">
             Key insights revealed include a <strong>7.7% decrease</strong> in reported crimes for 2024 and distinct seasonal patterns where incident frequency correlates strongly with warmer months and weekends.
